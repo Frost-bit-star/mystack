@@ -1,3 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <rect x="20" y="20" width="60" height="10" rx="2" fill="#00cc88"/>
+  <rect x="20" y="40" width="60" height="10" rx="2" fill="#00cc88"/>
+  <rect x="20" y="60" width="60" height="10" rx="2" fill="#00cc88"/>
+</svg>
 # 🗂️ Stack Framework
 
 **Stack Framework** is a lightweight, minimal PHP framework built with **SQLite3**, designed for fast backend development with clean architecture and easy API/logic integration.
@@ -45,7 +50,7 @@ require_once __DIR__ . '/../logic/auth.php';
 
 ✅ Best practice: only include needed logic in each page to keep execution clean.
 
-
+```
 ---
 
 🤖 Using AI Helper
@@ -55,6 +60,8 @@ ai.php integrates Stack AI
 
 Example:
 
+```
+
 require_once __DIR__ . '/../logic/ai.php';
 
 $userId = 'test-user';
@@ -62,6 +69,8 @@ $userMessage = 'Hello AI!';
 $aiReply = fetchStackVerifyAI($userId, $userMessage);
 
 echo $aiReply;
+
+```
 
 
 ---
@@ -74,11 +83,11 @@ regUsers.php – user registration logic with DB write
 
 
 Example usage in API endpoint:
-
+```
 require_once __DIR__ . '/../logic/regUsers.php';
 register_user($db, $_POST);
 
-
+```
 ---
 
 ✉️ Email OTP Integration
