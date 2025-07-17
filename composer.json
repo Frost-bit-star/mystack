@@ -1,0 +1,20 @@
+{
+    "name": "stack/stack-framework",
+    "description": "A lightweight PHP framework with SQLite for rapid backend apps.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "morgan miller",
+            "email": "morganmilstone983@email.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "StackFramework\\": "app/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    }
+}

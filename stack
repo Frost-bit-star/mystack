@@ -1,0 +1,43 @@
+#!/usr/bin/env php
+<?php
+
+echo "=== Stack Framework CLI ===\n";
+
+$command = $argv[1] ?? 'help';
+
+switch ($command) {
+    case 'help':
+        echo "Commands:\n";
+        echo "  server   Start local server\n";
+        echo "  test    Run test kit\n";
+        echo "  migrate Run DB migrations\n";
+        break;
+
+    case 'serve':
+        echo "Starting server at http://localhost:8000\n";
+        exec("php -S localhost:8000 index.php");
+        break;
+
+    case 'test':
+        require __DIR__ . '/test.php';
+        break;
+
+    case 'migrate':
+        echo "Running migrations...\n";
+        require __DIR__ . '/app/connection/init.php';
+        // Example migration: create users table
+        $db->exec("CREATE TABLE IF NOT EXISTS users (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT,
+            email TEXT UNIQUE,
+            password TEXT,
+            phone TEXT,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )");
+        echo "Migration complete.\n";
+        break;
+
+    default:
+        echo "Unknown command.\n";
+        break;
+}
