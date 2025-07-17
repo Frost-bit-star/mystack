@@ -1,17 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
-  <rect x="20" y="20" width="60" height="10" rx="2" fill="#00cc88"/>
-  <rect x="20" y="40" width="60" height="10" rx="2" fill="#00cc88"/>
-  <rect x="20" y="60" width="60" height="10" rx="2" fill="#00cc88"/>
-</svg>
 # 🗂️ Stack Framework
 
-**Stack Framework** is a lightweight, minimal PHP framework built with **SQLite3**, designed for fast backend development with clean architecture and easy API/logic integration.
+<div align="center">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80" fill="none">
+    <rect x="20" y="20" width="60" height="10" rx="2" fill="#00cc88"/>
+    <rect x="20" y="40" width="60" height="10" rx="2" fill="#00cc88"/>
+    <rect x="20" y="60" width="60" height="10" rx="2" fill="#00cc88"/>
+  </svg>
+</div>
+
+**Stack Framework** is a lightweight, minimal PHP framework built with **SQLite3**, designed for rapid backend and AI-powered application development with clean architecture and easy API/logic integration.
 
 ---
 
-## ⚡ **Features**
+## ✨ Features
 
-- 🚀 Minimal setup, no Composer required
+✅ Minimal setup  
+✅ Built-in SQLite3 database  
+✅ PSR-4 autoloading (Composer ready)  
+✅ Simple AI integration example  
+✅ Clean routing and logic separation  
+✅ Session management  
+✅ Ready for CLI testing and deployment
+
+---
+
+## 📦 Installation
+
+### Using Composer
+
+If public:
+
+```bash
+composer require stack/stack-framework
+```
+---
+
+## ⚡ **other features**
+
 - 📂 Clean folder structure
 - 🔗 Automatic routing based on `public/` files
 - 🗃️ Built-in SQLite database connection
