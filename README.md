@@ -9,6 +9,7 @@
 </div>
 
 **Stack Framework** is a lightweight, minimal PHP framework built with **SQLite3**, designed for rapid backend and AI-powered application development with clean architecture and easy API/logic integration.
+https://stackframework.ct.ws/
 
 ---
 
